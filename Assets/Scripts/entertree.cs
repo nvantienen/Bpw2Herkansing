@@ -1,0 +1,23 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using UnityEngine;
+
+public class entertree : MonoBehaviour
+{
+    
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        SceneManager.LoadScene("inTree");
+        sceneData.wasinTree = true;
+
+    }
+}
+
